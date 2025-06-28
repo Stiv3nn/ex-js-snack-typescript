@@ -106,3 +106,10 @@ type ProjectMenager = Dipendente & {
 };
 
 // type DipendenteDeveloperProjectMenager = Dipendente & Developer & ProjectMenager;
+
+type Team = {
+    nome: string,
+    progettoAttuale: string | null;
+    budget: number,
+    membri: [ProjectMenager, Developer, ...Developer[]]
+}
